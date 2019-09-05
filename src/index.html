@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Калькулятор</title>
+        <link rel="stylesheet" href="css/styles.css">      
+    </head>
+    <body>
+ 
+        <div class="kalk6">
+            <div class="content">
+                <h>Снизим расходы на Ваш автопарк до 40% с помощью GPS / ГЛОНАСС мониторинга и контроля топлива</h>
+                <br>
+                <p><img src="img/arrow.png" class="arrow">Пройдите опрос, это займет 30 секунд и получите развернутую консультацию от специалиста в отрасли</p>
+                <br>
+                <button class="btn_modal" class="btn_modal">УЗНАТЬ СТОИМОСТЬ</button>
+                <br>
+                <img src="img/man.png" class="man">
+            </div>
+
+            <div id="myModal" class="modal"> 
+            
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="questions question1"> 
+                        <h>Выберите категорию Вашего транспорта</h>                     
+                        <div class="status_bar"></div>
+                        <p class="proc">Вопрос 1 из 4</p>
+                        <div class="row">
+                            <section class="white">
+                                <p><input name="transship_category" type="radio" value="gruzoperevozka" id="rb1" checked><label for="rb1">Грузоперевозка</label></p>
+                                <p><input name="transship_category" type="radio" value="selhoztehnika" id="rb2"><label for="rb2">Сельхозтехника</label></p>
+                                <p><input name="transship_category" type="radio" value="spectehnika" id="rb3"><label for="rb3">Спецтехника</label></p>
+                                <p><input name="transship_category" type="radio" value="GKH" id="rb4"><label for="rb4">ЖКХ</label></p>
+                                <p><input name="transship_category" type="radio" value="taxi" id="rb5"><label for="rb5">Такси / прокат</label></p>
+                                <p><input name="transship_category" type="radio" value="logistika" id="rb6"><label for="rb6">Логистика и дистрибьюция</label></p>
+                                <p><input name="transship_category" type="radio" value="neft_gaz" id="rb7"><label for="rb7">Нефть и газ</label></p>
+                                <p><input name="transship_category" type="radio" value="opasnie_gruzi" id="rb8"><label for="rb8">Перевозка опасных грузов</label></p>
+                                <p><input name="transship_category" type="radio" value="drugoe" id="rb9"><label for="rb9">Другое</label></p>
+                                <button class="next" id="next_q1">Далее</button>  
+                            </section> 
+                            <section class="gray">
+                                <img src="img/Dmitry.png">
+                                <div class="brigadir">
+                                    <h>Дмитрий</h>
+                                    <h1>Руководитель отдела оборудования ТС GPS/ГЛОНАСС и ДОПОГ</h1>
+                                </div>
+                                <hr>
+                                <h2>Почему стоит сотрудничать с нами?</h2>
+                                <ul>
+                                    <li>1. Опыт решения нестандартных задач </li>
+                                    <li>2. Качественное и своевременное обслуживание ТС</li> 
+                                    <li>3. Оборудование по ценам производителя </li>
+                                    <li>4. Опыт работы с крупными предприятиями от 300 единиц </li>
+                                    <li>5. Персональный куратор</li>
+                                </ul>
+                            </section>  
+                        </div>            
+                    </div>
+
+                    <div class="questions question2"> 
+                        <h>Сколько единиц техники планируете оснастить?</h>                     
+                        <div class="status_bar"></div>
+                        <p class="proc">Вопрос 2 из 4</p>
+                        <div class="row">
+                            <section class="white">
+                                <p>Перемещайте ползунок влево/вправо</p>
+
+                                <section class="square section_width">
+                                    <div class="slider-cont">
+                                        <div id="slider-range-min"></div>
+                                    </div>
+                                    <p><span class="right"><input type="number" id="amount" min="1" max="150" step="1"><label for="amount"><span class="seriy">единиц техники</span></label></span></p>
+                                </section>
+
+
+                                <button class="previous" id="previous_q2">Назад</button> 
+                                <button class="next" id="next_q2">Далее</button>                
+                            </section> 
+                            <section class="gray">
+                                <img src="img/Dmitry.png">
+                                <div class="brigadir">
+                                    <h>Дмитрий</h>
+                                    <h1>Руководитель отдела оборудования ТС GPS/ГЛОНАСС и ДОПОГ</h1>
+                                </div>
+                                <hr>
+                                <h2>Почему стоит сотрудничать с нами?</h2>
+                                <ul>
+                                    <li>1. Опыт решения нестандартных задач </li>
+                                    <li>2. Качественное и своевременное обслуживание ТС</li> 
+                                    <li>3. Оборудование по ценам производителя </li>
+                                    <li>4. Опыт работы с крупными предприятиями от 300 единиц </li>
+                                    <li>5. Персональный куратор</li>
+                                </ul>
+                            </section>  
+                        </div>            
+                    </div>
+
+                    <div class="questions question3"> 
+                        <h>Какие задачи планируете решить?</h>                     
+                        <div class="status_bar"></div>
+                        <p class="proc">Вопрос 3 из 4</p>
+                        <div class="row">
+                            <section class="white">
+                               <div class="check">
+                                    <input type="checkbox" class="checkbox" id="checkbox1" value="kontrol_mestopolozheniya"/>
+                                    <label for="checkbox1">Контроль местоположения и маршрута;</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" value="kontrol_sliva" class="checkbox" id="checkbox2"/>
+                                    <label for="checkbox2">Контроль слива топлива(место, время, объемы заправок и сливов);</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" value="kontrol_TO" class="checkbox" id="checkbox3"/>
+                                    <label for="checkbox3">Контроль своевременности прохождения ТО;</label>
+                                </div>
+                                 <div class="check">
+                                    <input type="checkbox" value="kontrol_skorosti" class="checkbox" id="checkbox4"/>
+                                    <label for="checkbox4">Контроль скоростного режима;</label>
+                                </div>
+                                 <div class="check">
+                                    <input type="checkbox" value="kontrol_morochasov" class="checkbox" id="checkbox5"/>
+                                    <label for="checkbox5">Контроль моточасов;</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" value="kontrol_vogdeniya" class="checkbox" id="checkbox6"/>
+                                    <label for="checkbox6">Контроль стиля вождения;</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" value="logisticheskie_zadachi" class="checkbox" id="checkbox7"/>
+                                    <label for="checkbox7">Решение логистических задач. Помощь работе механника;</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" value="sobludenie_zakonodatelstva" class="checkbox" id="checkbox8"/>
+                                    <label for="checkbox8">Установка для соблюдения законодательства; </label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" value="drugoe" class="checkbox" id="checkbox9"/>
+                                    <label for="checkbox9">Другое.</label>
+                                </div>
+                                <button class="previous" id="previous_q3">Назад</button> 
+                                <button class="next" id="next_q3">Далее</button>                
+                            </section> 
+                            <section class="gray">
+                                <img src="img/Dmitry.png">
+                                <div class="brigadir">
+                                    <h>Дмитрий</h>
+                                    <h1>Руководитель отдела оборудования ТС GPS/ГЛОНАСС и ДОПОГ</h1>
+                                </div>
+                                <hr>
+                                <h2>Почему стоит сотрудничать с нами?</h2>
+                                <ul>
+                                    <li>1. Опыт решения нестандартных задач </li>
+                                    <li>2. Качественное и своевременное обслуживание ТС</li> 
+                                    <li>3. Оборудование по ценам производителя </li>
+                                    <li>4. Опыт работы с крупными предприятиями от 300 единиц </li>
+                                    <li>5. Персональный куратор</li>
+                                </ul>
+                            </section>  
+                        </div>            
+                    </div>
+
+                    <div class="questions question4"> 
+                        <h class="check">Отлично! Последний шаг.</h>                     
+                        <div class="status_bar"></div>
+                        <p class="proc">Вопрос 4 из 4</p>
+                        <div class="row">
+                            <section class="white">
+                                <p class="big">Благодарим за доверие!</p>
+                                <p>Оставьте контактные данные и получите</p>
+                                <p>персональную скидку 10 % на допобордудование</p>
+
+                                <form method="post" id="modal_form" action="">
+
+                                    <input type="text" name="name" placeholder="Имя">   
+                                    <input type="text" name="phonenumber" placeholder="Телефон">
+
+                                   <input type="text" name="transport_cat" class="q_1"><br>
+                                    <input type="text" name="quantity" class="q_2"><br> 
+                                    <input type="text" name="tasks" class="q_3"><br>  
+
+                                    <p class="small">Заполняя форму, я даю свое согласие на обработку персональных данных</p>
+                                
+                                    <!-- <button class="previous" id="previous_q4">Назад</button> --> 
+                                    <input type="submit" value="Готово" class="sent next">
+
+                                </form>                 
+                            </section> 
+                            <section class="gray">
+                                <img src="img/Dmitry.png">
+                                <div class="brigadir">
+                                    <h>Дмитрий</h>
+                                    <h1>Руководитель отдела оборудования ТС GPS/ГЛОНАСС и ДОПОГ</h1>
+                                </div>
+                                <hr>
+                                <h2>Почему стоит сотрудничать с нами?</h2>
+                                <ul>
+                                    <li>1. Опыт решения нестандартных задач </li>
+                                    <li>2. Качественное и своевременное обслуживание ТС</li> 
+                                    <li>3. Оборудование по ценам производителя </li>
+                                    <li>4. Опыт работы с крупными предприятиями от 300 единиц </li>
+                                    <li>5. Персональный куратор</li>
+                                </ul>
+                            </section>  
+                        </div>            
+                    </div>
+        
+                </div>
+            </div>     
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
